@@ -128,10 +128,12 @@
                 const email = document.getElementById('email').value.trim();
                 const senha = document.getElementById('senha').value;
                 
-                // Verificar as credenciais (hardcoded conforme solicitado)
-                if (email === 'vitorlocatelli@gmail.com' && senha === 'Dstqqss91') {
+                // Verificar as credenciais (com dois usuários válidos)
+                if ((email === 'vitorlocatelli@gmail.com' && senha === 'Dstqqss91') || 
+                    (email === 'ayres@consigliereconsultoria.com' && senha === 'Strategus')) {
                     // Login bem-sucedido
                     localStorage.setItem('autenticado', 'true');
+                    localStorage.setItem('userEmail', email); // Armazenar email do usuário logado
                     window.location.href = 'index.html';
                 } else {
                     // Exibir mensagem de erro
