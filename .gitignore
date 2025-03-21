@@ -1,0 +1,34 @@
+# Arquivos de ambiente com segredos
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Diretórios de dependências
+/node_modules
+/.pnp
+.pnp.js
+
+# Arquivos de build
+/build
+/dist
+
+# Arquivos de cache
+.cache
+.parcel-cache
+
+# Arquivos de logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs e editores
+/.idea
+/.vscode
+*.swp
+*.swo 
